@@ -11,6 +11,8 @@
 		D60479342B1FE3C3003C95A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60479332B1FE3C3003C95A8 /* ContentView.swift */; };
 		D60479362B1FE3C5003C95A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60479352B1FE3C5003C95A8 /* Assets.xcassets */; };
 		D60479392B1FE3C5003C95A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60479382B1FE3C5003C95A8 /* Preview Assets.xcassets */; };
+		D60479442B1FE6A5003C95A8 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60479432B1FE6A5003C95A8 /* Coordinator.swift */; };
+		D60479462B200F1F003C95A8 /* ARViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60479452B200F1F003C95A8 /* ARViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		D60479332B1FE3C3003C95A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D60479352B1FE3C5003C95A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D60479382B1FE3C5003C95A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D60479432B1FE6A5003C95A8 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D60479452B200F1F003C95A8 /* ARViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		D60479302B1FE3C3003C95A8 /* AR-MeasurementApp */ = {
 			isa = PBXGroup;
 			children = (
+				D60479422B1FE694003C95A8 /* Coordinators */,
+				D604793F2B1FE435003C95A8 /* Extensions */,
 				D60479312B1FE3C3003C95A8 /* AppDelegate.swift */,
 				D60479332B1FE3C3003C95A8 /* ContentView.swift */,
 				D60479352B1FE3C5003C95A8 /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				D60479382B1FE3C5003C95A8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D604793F2B1FE435003C95A8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D60479452B200F1F003C95A8 /* ARViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D60479422B1FE694003C95A8 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D60479432B1FE6A5003C95A8 /* Coordinator.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D60479442B1FE6A5003C95A8 /* Coordinator.swift in Sources */,
 				D60479342B1FE3C3003C95A8 /* ContentView.swift in Sources */,
 				D60479322B1FE3C3003C95A8 /* AppDelegate.swift in Sources */,
+				D60479462B200F1F003C95A8 /* ARViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
