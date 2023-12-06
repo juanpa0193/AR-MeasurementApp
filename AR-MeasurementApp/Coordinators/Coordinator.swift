@@ -30,14 +30,14 @@ class Coordinator {
     
     lazy var resetButton: UIButton = {
         
-        let button = UIButton(configuration: .gray(), primaryAction: UIAction(handler: { action in
+        let button = UIButton(configuration: .gray(), primaryAction: UIAction(handler: { [weak self] action in
                 
-            guard let arView = self.arView else { return }
-            self.startAnchor = nil
-            self.endAnchor = nil
+            guard let arView = self?.arView else { return }
+            self?.startAnchor = nil
+            self?.endAnchor = nil
             
             arView.scene.anchors.removeAll()
-            self.measurementButton.setTitle("0.00", for: .normal)
+            self?.measurementButton.setTitle("0.00", for: .normal)
             
             
         }))
